@@ -9,6 +9,8 @@ import UseMemoDemo from './Components/UseMemoDemo';
 import UseCallback from './Components/UseCallback';
 import UseContext from './Components/UseContext';
 import Component1 from './Components/Component1';
+import UseEffect from './Components/UseEffect';
+import UseRef from './Components/UseRef';
 
 export const usecontext = React.createContext()
 
@@ -42,10 +44,14 @@ function App() {
      <UseContext />
      </usecontext.Provider> */}
 
-     <usecontext.Provider value={{name, updateName}}>
+     {/* <usecontext.Provider value={{name, updateName}}>
       <Component1 />
       <p>{name}</p>
-     </usecontext.Provider>
+     </usecontext.Provider> */}
+
+     {/* <UseEffect /> */}
+
+     <UseRef />
 
     </div>
     </>
