@@ -11,6 +11,9 @@ import UseContext from './Components/UseContext';
 import Component1 from './Components/Component1';
 import UseEffect from './Components/UseEffect';
 import UseRef from './Components/UseRef';
+import TextColorChange from './Components/TextColorChange';
+import AddInputs from './Components/AddInputs';
+import BackgroundcolorChange from './Components/BackgroundcolorChange'
 
 export const usecontext = React.createContext()
 
@@ -51,7 +54,13 @@ function App() {
 
      {/* <UseEffect /> */}
 
-     <UseRef />
+     {/* <UseRef /> */}
+
+     {/* <TextColorChange /> */}
+
+     {/* <AddInputs /> */}
+
+     <BackgroundcolorChange />
 
     </div>
     </>
