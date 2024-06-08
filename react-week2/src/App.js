@@ -7,6 +7,9 @@ import Map from './Components/Map'
 import UseReducer from './Components/UseReducer';
 import UseMemoDemo from './Components/UseMemoDemo';
 import UseCallback from './Components/UseCallback';
+import UseContext from './Components/UseContext';
+
+export const usecontext = React.createContext()
 
 function App() {
 
@@ -27,7 +30,11 @@ function App() {
 
      {/* <UseMemoDemo /> */}
 
-     <UseCallback />
+     {/* <UseCallback /> */}
+
+     <usecontext.Provider value={'neethu'}>
+     <UseContext />
+     </usecontext.Provider>
 
     </div>
     </>
