@@ -1,18 +1,34 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './App.css';
-import ParentComponent from './Components/ParentComponent';
-import Counter from './Components/Counter';
-import ComponentC from './Components/ComponentC';
-import CounterOne from './Components/CounterOne';
 
-export const UserContext = React.createContext()
+import State from './Components/State'
+import Props from './Components/Props'
+import Map from './Components/Map'
+import UseReducer from './Components/UseReducer';
+import UseMemoDemo from './Components/UseMemoDemo';
+import UseCallback from './Components/UseCallback';
 
 function App() {
+
+  
+  let a = [1,2,3,4,5,6]
   
   return (
     <>
     <div>
-      <CounterOne/>
+
+     {/* <State /> */}
+
+     {/* <Props name='neethu'/> */}
+
+     {/* <Map values={a}/> */}
+
+     {/* <UseReducer /> */}
+
+     {/* <UseMemoDemo /> */}
+
+     <UseCallback />
+
     </div>
     </>
   );

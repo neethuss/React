@@ -1,9 +1,9 @@
 import React, { useContext } from 'react'
 import { UserContext } from '../App'
 
-function ComponentF() {
-
-  const {name, updateName} = useContext.UserContext()
+const ComC = () => {
+  
+  const {name, updateName} = useContext(UserContext)
   return (
     <div>
       <h1>Name - {name}</h1>
@@ -12,4 +12,8 @@ function ComponentF() {
   )
 }
 
-export default ComponentF
+export default ComC
+
+
+
+
